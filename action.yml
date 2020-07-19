@@ -25,6 +25,14 @@ inputs:
     description: "The name of the environment for the deployment"
     default: "production"
     required: false
+  transient_environment:
+    description: "If this is a transient environment"
+    default: "false"
+    required: false
+  production_environment:
+    description: "If this is a production environment"
+    default: "true"
+    required: false
 outputs:
   deployment_id:
     description: "The ID of the created deployment"
